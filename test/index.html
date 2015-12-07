@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+var socket = new WebSocket("ws://changer.site:3000/");        
+
+socket.onopen = function() {
+ console.log("first open");
+};
+
+socket.onmessage = function(message) {
+	console.log(message.data);
+	socket.send("nihao");
+};
+
+socket.onclose = function() {
+	console.log("closed");
+};
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+test[0-9]
+node_moudles/
+*.o

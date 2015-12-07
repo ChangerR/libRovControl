@@ -1,0 +1,11 @@
+prefix="/home/changer/Desktop/test/libwebsocket"
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: libwebsockets
+Description: Websockets server and client library
+Version: 1.5
+
+Libs: -L${libdir} -lwebsockets
+Cflags: -I${includedir}
